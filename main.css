@@ -1,0 +1,425 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+ul  { 
+    margin: 0;
+    padding: 1rem;
+    display: flex;  
+    list-style: none;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+li a{
+  display: flex;
+  justify-content:space-between;
+  padding:5px;
+  align-items: right;
+ text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+li a:hover{
+    color: sienna;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+nav{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+    width: 100%;
+    z-index: 10;
+    background: rgba(197, 187, 187, 0.8);
+  position: fixed;
+}
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -40%);
+    color: rgb(20, 20, 21);
+    text-align: center;
+    text-decoration: solid;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+ 
+ .header-content button{
+   background-color: sienna;
+    color: #faf8f8;
+    text-align: center;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;  
+    font-size: large; 
+ }
+  .header-content button:hover{
+      background-color: #e44012;
+      cursor: pointer;
+  }
+    .header-content h3 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-wrap: balance;
+    }
+    .header-content p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      color: #07085a;
+      font-weight: bolder;
+    }
+header img{
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    height: 150vh;
+    opacity: 0.6;
+}
+ .program-section {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .program-section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .program-section p {
+      color: #3f3434;
+      margin-bottom: 40px;
+    }
+    .program-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px 20px;
+      width: 300px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card .icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+    .card ul {
+      text-align: left;
+      margin: 15px 0;
+      padding-left: 20px;
+      color: #444;
+    }
+    .card ul li {
+      margin: 8px 0;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff;
+      transition: background 0.3s;
+    }
+    .btn-yellow { background: #f4c430; }
+    .btn-yellow:hover { background: #d9aa00; }
+    .btn-green { background: #28a745; }
+    .btn-green:hover { background: #1e7e34; }
+    .btn-red { background: #e63946; }
+    .btn-red:hover { background: #c82333; }
+
+  
+ .gym-interior img{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    opacity: 0.6;
+    position: absolute;
+ }
+ .gym-text{
+  top: 75%;
+    text-align: center;
+    padding: 20px;
+    padding-top: 40px;
+   position: relative;
+  }
+  .gym-text h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color:rgb(23, 22, 22);
+    text-wrap: balance;
+  }
+  .gym-text p {
+    color: #07085a;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+  .classes-section {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .classes-section h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+
+  .classes-section p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1;
+    margin-bottom: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .classes-section ul {
+    display: grid;
+    display: flexbox;;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .classes-section li {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    align-items: center;
+  }
+
+  .classes-section li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  .feature-item{
+    font-size: 1.2rem;
+    color: #555;
+    padding: 10px 0px;
+    border-bottom: 1px solid #eee;
+  }
+  .feature-item a {
+    display: inline-block;
+    text-align: center;
+    
+  }
+  /* Schedule Section Styles */
+
+
+.section-heading.dark-bg {
+  background: #222;
+  color: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.schedule-section {
+      padding: 80px 0;
+      background: #f8f9fa;
+    }
+    
+    .schedule-filter {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    
+    .schedule-filter li {
+      padding: 10px 20px;
+      cursor: pointer;
+      background: #fff;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    
+    .schedule-filter li.active {
+      background: #ed563b;
+      color: white;
+    }
+    
+    .schedule-table {
+      width: 100%;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    .schedule-table table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .schedule-table td {
+      padding: 15px;
+      border: 1px solid #eee;
+    }
+    
+    .schedule-table .day-time {
+      font-weight: bold;
+      background: #f8f9fa;
+    }
+    
+    .ts-item {
+      display: none;
+    }
+    
+    .ts-item.show {
+      display: table-cell;
+    }
+
+
+/* Trainers Section Styles */
+.trainers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.trainer-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.trainer-card:hover {
+  transform: translateY(-5px);
+}
+
+.trainer-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.trainer-card h3 {
+  color: #333;
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.trainer-card p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Section Header Styles */
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+section > div > p {
+  text-align: center;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+  line-height: 1.6;
+}
+.contact-section {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+  margin: 40px;
+  
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.contact-form .btn {
+  background-color: #f35525;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.contact-form .btn:hover {
+  background-color: #e44012;
+}
+footer{
+    background-color: #9c9898;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
